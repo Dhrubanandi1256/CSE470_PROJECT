@@ -40,12 +40,12 @@ public class HomeController {
         model.addAttribute("cartCount", GlobalData.cart.size());
         return "shop";
     }
-    @GetMapping("/shop/viewproduct/{id}")
-    public String viewProduct(Model model,@PathVariable int id) {
-       model.addAttribute("products",productService.getProductById(id));
-
-        return "viewProduct";
-    }
+//    @GetMapping("/shop/viewproduct/{id}")
+//    public String viewProduct(Model model,@PathVariable int id) {
+//       model.addAttribute("products",productService.getProductById(id));
+//
+//        return "viewProduct";
+//    }
     @GetMapping({"/allproduct"})
     public String allproduct(Model model) {
         model.addAttribute("products", productService.getAllProduct());

@@ -1,3 +1,84 @@
+<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>-->
+<!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45; Include the above in your HEAD tag &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-xs-8">-->
+<!--            <div class="panel panel-info">-->
+<!--                <div class="panel-heading">-->
+<!--                    <div class="panel-title">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-xs-6">-->
+<!--                                <h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>-->
+<!--                            </div>-->
+<!--                            <div class="col-xs-6">-->
+<!--                                <button type="button" class="btn btn-primary btn-sm btn-block">-->
+<!--                                    <a href="#" th:href="@{/allproduct}"><span-->
+<!--                                            class="glyphicon glyphicon-share-alt"></span> Continue shopping </a>-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="panel-body">-->
+<!--                    <th:block th:each = "product : ${cart}">-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                        <div class="col-xs-4">-->
+<!--                            <h4 class="product-name"><strong><p th:text="${product.name}"></p></strong></h4>-->
+<!--                            <h4><small><p th:text="${product.description}"></p></small></h4>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-6">-->
+<!--                            <div class="col-xs-6 text-right">-->
+<!--                                <h6><strong><p th:text="${product.price}"></p> </strong></h6>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--&lt;!&ndash;                            <div class="col-xs-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <input type="text" class="form-control input-sm" value="1">&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                         <div class="col-xs-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                              <button type="button" class="btn btn-link btn-xs">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="glyphicon glyphicon-trash"> </span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </button>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <td><a href="" th:href="@{/cart/removeitem/{id}(id=${product.id})}" class="btn btn-primary">Delete</a></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col-xs-2">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    <button type="button" class="btn btn-link btn-xs">&ndash;&gt;-->
+<!--                        <td><a href="" th:href="@{/cart/removeitem/{index}(index=${product.id})}"class="btn btn-primary">Delete</a></td>-->
+<!--&lt;!&ndash;                              </div>&ndash;&gt;-->
+<!--                            </button>-->
+<!--                       </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--                                                           </div>-->
+<!--                                                       <hr>-->
+<!--                                                       </th:block>-->
+<!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+<!--                                                   <hr>-->
+<!--                                                   </div>-->
+<!--            </div>-->
+<!--            <div class="panel-footer">-->
+<!--                <div class="row text-center">-->
+<!--                    <div class="col-xs-9">-->
+<!--                        <h4 class="text-right">Total <strong>$50.00</strong></h4>-->
+<!--                    </div>-->
+<!--                    <div class="col-xs-3">-->
+<!--&lt;!&ndash;                        <button type="button" class="btn btn-success btn-block">&ndash;&gt;-->
+<!--&lt;!&ndash;                            Checkout&ndash;&gt;-->
+<!--&lt;!&ndash;                        </button>&ndash;&gt;-->
+<!--                        <td><a href="" th:href="@{/checkout1}" class="btn btn-primary">checkout</a></td>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</div>-->
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -24,38 +105,38 @@
                 </div>
                 <div class="panel-body">
                     <th:block th:each = "product : ${cart}">
-                    <div class="row">
-                        <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
-                        </div>
-                        <div class="col-xs-4">
-                            <h4 class="product-name"><strong><p th:text="${product.name}"></p></strong></h4>
-                            <h4><small><p th:text="${product.description}"></p></small></h4>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="col-xs-6 text-right">
-                                <h6><strong><p th:text="${product.price}"></p> </strong></h6>
-                            </div>
+                       <div class="row">
+<!--                            <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">-->
+                           </div>
                             <div class="col-xs-4">
-                                <input type="text" class="form-control input-sm" value="1">
+                                <h4 class="product-name"><strong><p th:text="${product.name}"></p></strong></h4>
+                                <h4><small><p th:text="${product.description}"></p></small></h4>
                             </div>
-                            <div class="col-xs-2">
-                                <button type="button" class="btn btn-link btn-xs">
-                                    <span class="glyphicon glyphicon-trash"> </span>
-                                </button>
-<!--                                <td><a href="" th:href="@{/cart/removeitem/{id}(id=${product.id})}" class="btn btn-primary">Delete</a></td>-->
+                            <div class="col-xs-6">
+                                <div class="col-xs-6 text-right">
+                                    <h6><strong><p th:text="${product.price}"></p> </strong></h6>
+                                </div>
+<!--                                <div class="col-xs-4">-->
+<!--                                    <input type="text" class="form-control input-sm" value="1">-->
+<!--                                </div>-->
+                                <div class="col-xs-2">
+<!--                                    <button type="button" class="btn btn-link btn-xs">-->
+<!--                                        <span class="glyphicon glyphicon-trash"> </span>-->
+<!--                                    </button>-->
+                                    <!--                                <td><a href="" th:href="@{/cart/removeitem/{id}(id=${product.id})}" class="btn btn-primary">Delete</a></td>-->
 
-                                <td><a href="" th:href="@{/cart/removeitem/{index}(index=${product.id})}"class="btn btn-primary">Delete</a>
+                                    <td><a href="" th:href="@{/cart/removeitem/{index}(index=${product.id})}"class="btn btn-primary">Delete</a>
+                                </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
-                    <hr>
+                        <hr>
                     </th:block>
                 </div>
                 <hr>
 
-<!--                </div>-->
+                <!--                </div>-->
             </div>
             <div class="panel-footer">
                 <div class="row text-center">
@@ -63,9 +144,9 @@
                         <h4 class="text-right">Total <strong>$50.00</strong></h4>
                     </div>
                     <div class="col-xs-3">
-<!--                        <button type="button" class="btn btn-success btn-block">-->
-<!--                            Checkout-->
-<!--                        </button>-->
+                        <!--                        <button type="button" class="btn btn-success btn-block">-->
+                        <!--                            Checkout-->
+                        <!--                        </button>-->
                         <td><a href="" th:href="@{/checkout1}" class="btn btn-primary">checkout</a></td>
                     </div>
                 </div>

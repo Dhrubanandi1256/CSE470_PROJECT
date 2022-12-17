@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="https://use.fontawesome.com/1dec14be15.js"></script>
+<link rel="stylesheet" href="" th:href="@{/js/signup.css}">
+
+<!--<h2 class="font_white text-center">SIGN UP</h2>-->
+
+<!--<form method="post" th:action="@{/signup}" th:object="${user}">-->
+<!--  <input type="text" name="Username" placeholder="Username" th:field="*{userName}" required=" ">-->
+<!--  <input type="text" name="Email" placeholder="Email" th:field="*{email}" required=" ">-->
+<!--  <input type="password" name="Password" placeholder="Password" th:field="*{password}"required=" ">-->
+<!--  <button type="submit">Register</button>-->
+<!--  &lt;!&ndash;              <input type="submit" value="Register">&ndash;&gt;-->
+<!--</form>-->
+<!--</body>-->
+
+<div class="container d-flex justify-content-center mt-5">
+<!--    <div class="card">-->
+<!--        <h4 class="text-center pt-4">Hola!</h4>-->
+<!--        <span class="info">To all special dicounts and more <br> become a member!</span>-->
+        <div class="form-group container">
+<!--            <input type="email" name="email" placeholder="email address" class="form-control form">-->
+<!--            <input type="password" name="password" placeholder="password" class="form-control">-->
+
+<!--        </div>-->
+<!--        <div class="text-center container">-->
+<!--            <button type="button" class="btn">Register</button>-->
+<!--            <div class="d-flex justify-content-between container strech"><span>Go To Login</span><span>Forgot Password</span></div>-->
+<!--        </div>-->
+            <form method="post" th:action="@{/signup}" th:object="${user}">
+                <input type="text" name="Username" placeholder="Username" th:field="*{userName}" required=" "class="form-control form">
+                <input type="text" name="Email" placeholder="Email" th:field="*{email}" required=" "class="form-control form">
+                <input type="password" name="Password" placeholder="Password" th:field="*{password}"required=" "class="form-control form">
+                <button type="submit"class="btn btn-succes ggl">Register</button>
+            </form>
+
+<!--        <div class="text-center pb-4 pt-3">-->
+<!--            <div class="px-3"><h2 class="else"><span class="else2"> Or use these to login </span></h2></div>-->
+<!--            <div class="pt-3 d-flex flex-row px-3">-->
+<!--                <button type="button" class="btn btn-success fb mr-2">Facebook</button>-->
+<!--                <button type="button" class="btn btn-succes ggl">Google</button>-->
+<!--            </div>-->
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>

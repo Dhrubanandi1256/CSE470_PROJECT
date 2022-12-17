@@ -1,0 +1,530 @@
+<!--<form th:action="@{/signup}"th:object="${user}"method="post">-->
+<!--  <div class="form-group">-->
+<!--    <label for="exampleInputEmail1">Email address</label>-->
+<!--    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">-->
+<!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label for="exampleInputPassword1">Password</label>-->
+<!--    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
+<!--  </div>-->
+<!--  <div class="form-check">-->
+<!--    <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--    <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+<!--  </div>-->
+<!--  <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--</form>-->
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/html">-->
+<!--<head>-->
+<!--  <style>-->
+
+<!--    body{-->
+<!--      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;-->
+<!--    }-->
+<!--    * {box-sizing: border-box}-->
+<!--    input[type=text], input[type=password] {-->
+<!--      width: 100%;-->
+<!--      font-size: 14px;-->
+<!--      padding: 15px;-->
+<!--      margin: 5px 0 22px 0;-->
+<!--      display: inline-block;-->
+<!--      border: none;-->
+<!--      background: #f1f1f1;-->
+<!--    }-->
+<!--    label{-->
+<!--      font-size: 15px;-->
+<!--    }-->
+<!--    input[type=text]:focus, input[type=password]:focus {-->
+<!--      background-color: #ddd;-->
+<!--      outline: none;-->
+<!--    }-->
+<!--    hr {-->
+<!--      border: 1px solid #f1f1f1;-->
+<!--      margin-bottom: 25px;-->
+<!--    }-->
+<!--    button {-->
+<!--      font-size: 18px;-->
+<!--      font-weight: bold;-->
+<!--      background-color: rgb(10, 119, 13);-->
+<!--      color: white;-->
+<!--      padding: 14px 20px;-->
+<!--      margin: 8px 0;-->
+<!--      border: none;-->
+<!--      cursor: pointer;-->
+<!--      width: 100%;-->
+<!--      opacity: 0.9;-->
+<!--    }-->
+<!--    button:hover {-->
+<!--      opacity:1;-->
+<!--    }-->
+<!--    .cancel {-->
+<!--      padding: 14px 20px;-->
+<!--      background-color: #ff3d2f;-->
+<!--    }-->
+<!--    .formContainer {-->
+<!--      padding: 16px;-->
+<!--    }-->
+<!--    .formContainer p{-->
+<!--      font-size: 28px;-->
+<!--    }-->
+<!--  </style>-->
+<!--<body>-->
+<!--<form>-->
+<!--  <div class="formContainer">-->
+<!--    <h1>Sign Up Form</h1>-->
+<!--&lt;!&ndash;    <form method="post" th:action="@{/signup}"th:object="${user}">&ndash;&gt;-->
+<!--&lt;!&ndash;    <hr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <label for="email"><b>Email</b></label>&ndash;&gt;-->
+<!--&lt;!&ndash;    <input type="text" placeholder="Enter Email" name="email" required>&ndash;&gt;-->
+<!--&lt;!&ndash;    <label for="password"><b>Password</b></label>&ndash;&gt;-->
+<!--&lt;!&ndash;    <input type="password" placeholder="Enter Password" name="password" required>&ndash;&gt;-->
+<!--&lt;!&ndash;    <label for="repeatPassword"><b>Repeat Password</b></label>&ndash;&gt;-->
+<!--&lt;!&ndash;    <input type="password" placeholder="Repeat Password" name="repeatPassword"&ndash;&gt;-->
+<!--&lt;!&ndash;           required>&ndash;&gt;-->
+<!--&lt;!&ndash;    <label>&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="checkbox" checked="checked" name="remember" style="marginbottom: 15px"> Remember me&ndash;&gt;-->
+<!--&lt;!&ndash;    </label>&ndash;&gt;-->
+<!--&lt;!&ndash;    <p>By creating an account you agree to our <a href="#"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                  style="color:dodgerblue">Terms & Privacy</a><p>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div>&ndash;&gt;-->
+<!--&lt;!&ndash;      <button type="button" class="cancel">Cancel</button>&ndash;&gt;-->
+<!--&lt;!&ndash;      <button type="submit" class="signup">Sign Up</button>&ndash;&gt;-->
+<!--      <form method="post" th:action="@{/signup}" th:object="${user}">-->
+<!--                      <input type="text" name="Username" placeholder="Username" th:field="*{userName}" required=" ">-->
+<!--                      <input type="text" name="Email" placeholder="Email" th:field="*{email}" required=" ">-->
+<!--                      <input type="password" name="Password" placeholder="Password" th:field="*{password}"required=" ">-->
+<!--                      <button type="submit">Register</button>-->
+
+
+
+
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+<!--&lt;!&ndash;-->
+<!--Author: W3layouts-->
+<!--Author URL: http://w3layouts.com-->
+-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+
+<!--&lt;!&ndash; Added by HTTrack &ndash;&gt;<meta http-equiv="content-type" content="text/html;charset=UTF-8" />&lt;!&ndash; /Added by HTTrack &ndash;&gt;-->
+<!--<head>-->
+<!--  <title>Khusbu|Signup</title>-->
+<!--  &lt;!&ndash; for-mobile-apps &ndash;&gt;-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--  <meta name="keywords" content="Corner Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,-->
+<!--Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />-->
+<!--  <script type="application/x-javascript">-->
+<!--    addEventListener("load", function () {-->
+<!--      setTimeout(hideURLbar, 0);-->
+<!--    }, false);-->
+
+<!--    function hideURLbar() {-->
+<!--      window.scrollTo(0, 1);-->
+<!--    }-->
+<!--  </script>-->
+<!--  &lt;!&ndash; //for-mobile-apps &ndash;&gt;-->
+<!--  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&amp;display=swap"-->
+<!--        rel="stylesheet">-->
+
+<!--</head>-->
+
+<!--<body>-->
+<!--<script src="../../../../../../../m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>-->
+<!--<script>-->
+<!--  (function(){-->
+<!--    if(typeof _bsa !== 'undefined' && _bsa) {-->
+<!--      // format, zoneKey, segment:value, options-->
+<!--      _bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');-->
+<!--    }-->
+<!--  })();-->
+<!--</script>-->
+<!--<script>-->
+<!--  (function(){-->
+<!--    if(typeof _bsa !== 'undefined' && _bsa) {-->
+<!--      // format, zoneKey, segment:value, options-->
+<!--      _bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');-->
+<!--    }-->
+<!--  })();-->
+<!--</script>-->
+<!--<script>-->
+<!--  (function(){-->
+<!--    if(typeof _bsa !== 'undefined' && _bsa) {-->
+<!--      // format, zoneKey, segment:value, options-->
+<!--      _bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');-->
+<!--    }-->
+<!--  })();-->
+<!--</script>-->
+<!--&lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
+<!--<script async src='https://www.googletagmanager.com/gtag/js?id=G-98H8KRKT85'></script>-->
+<!--<script>-->
+<!--  window.dataLayer = window.dataLayer || [];-->
+<!--  function gtag(){dataLayer.push(arguments);}-->
+<!--  gtag('js', new Date());-->
+
+<!--  gtag('config', 'G-98H8KRKT85');-->
+<!--</script>-->
+
+<!--<meta name="robots" content="noindex">-->
+<!--<body><link rel="stylesheet" href="../../../../../../assests/css/font-awesome.min.css">-->
+<!--&lt;!&ndash; New toolbar&ndash;&gt;-->
+<!--<style>-->
+<!--  * {-->
+<!--    box-sizing: border-box;-->
+<!--    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;-->
+<!--  }-->
+
+
+<!--  #w3lDemoBar.w3l-demo-bar {-->
+<!--    top: 0;-->
+<!--    right: 0;-->
+<!--    bottom: 0;-->
+<!--    z-index: 9999;-->
+<!--    padding: 40px 5px;-->
+<!--    padding-top:70px;-->
+<!--    margin-bottom: 70px;-->
+<!--    background: #0D1326;-->
+<!--    border-top-left-radius: 9px;-->
+<!--    border-bottom-left-radius: 9px;-->
+<!--  }-->
+
+<!--  #w3lDemoBar.w3l-demo-bar a {-->
+<!--    display: block;-->
+<!--    color: #e6ebff;-->
+<!--    text-decoration: none;-->
+<!--    line-height: 24px;-->
+<!--    opacity: .6;-->
+<!--    margin-bottom: 20px;-->
+<!--    text-align: center;-->
+<!--  }-->
+
+<!--  #w3lDemoBar.w3l-demo-bar span.w3l-icon {-->
+<!--    display: block;-->
+<!--  }-->
+
+<!--  #w3lDemoBar.w3l-demo-bar a:hover {-->
+<!--    opacity: 1;-->
+<!--  }-->
+
+<!--  #w3lDemoBar.w3l-demo-bar .w3l-icon svg {-->
+<!--    color: #e6ebff;-->
+<!--  }-->
+<!--  #w3lDemoBar.w3l-demo-bar .responsive-icons {-->
+<!--    margin-top: 30px;-->
+<!--    border-top: 1px solid #41414d;-->
+<!--    padding-top: 40px;-->
+<!--  }-->
+<!--  #w3lDemoBar.w3l-demo-bar .demo-btns {-->
+<!--    border-top: 1px solid #41414d;-->
+<!--    padding-top: 30px;-->
+<!--  }-->
+<!--  #w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {-->
+<!--    font-size: 26px;-->
+<!--  }-->
+<!--  #w3lDemoBar.w3l-demo-bar .no-margin-bottom{-->
+<!--    margin-bottom:0;-->
+<!--  }-->
+<!--  .toggle-right-sidebar span {-->
+<!--    background: #0D1326;-->
+<!--    width: 50px;-->
+<!--    height: 50px;-->
+<!--    line-height: 50px;-->
+<!--    text-align: center;-->
+<!--    color: #e6ebff;-->
+<!--    border-radius: 50px;-->
+<!--    font-size: 26px;-->
+<!--    cursor: pointer;-->
+<!--    opacity: .5;-->
+<!--  }-->
+<!--  .pull-right {-->
+<!--    float: right;-->
+<!--    position: fixed;-->
+<!--    right: 0px;-->
+<!--    top: 70px;-->
+<!--    width: 90px;-->
+<!--    z-index: 99999;-->
+<!--    text-align: center;-->
+<!--  }-->
+<!--  /* ============================================================-->
+<!--  RIGHT SIDEBAR SECTION-->
+<!--  ============================================================ */-->
+
+<!--  #right-sidebar {-->
+<!--    width: 90px;-->
+<!--    position: fixed;-->
+<!--    height: 100%;-->
+<!--    z-index: 1000;-->
+<!--    right: 0px;-->
+<!--    top: 0;-->
+<!--    margin-top: 60px;-->
+<!--    -webkit-transition: all .5s ease-in-out;-->
+<!--    -moz-transition: all .5s ease-in-out;-->
+<!--    -o-transition: all .5s ease-in-out;-->
+<!--    transition: all .5s ease-in-out;-->
+<!--    overflow-y: auto;-->
+<!--  }-->
+
+
+<!--  /* ============================================================-->
+<!--  RIGHT SIDEBAR TOGGLE SECTION-->
+<!--  ============================================================ */-->
+
+<!--  .hide-right-bar-notifications {-->
+<!--    margin-right: -300px !important;-->
+<!--    -webkit-transition: all .3s ease-in-out;-->
+<!--    -moz-transition: all .3s ease-in-out;-->
+<!--    -o-transition: all .3s ease-in-out;-->
+<!--    transition: all .3s ease-in-out;-->
+<!--  }-->
+
+
+
+<!--  @media (max-width: 992px) {-->
+<!--    #w3lDemoBar.w3l-demo-bar a.desktop-mode{-->
+<!--      display: none;-->
+
+<!--    }-->
+<!--  }-->
+<!--  @media (max-width: 767px) {-->
+<!--    #w3lDemoBar.w3l-demo-bar a.tablet-mode{-->
+<!--      display: none;-->
+
+<!--    }-->
+<!--  }-->
+<!--  @media (max-width: 568px) {-->
+<!--    #w3lDemoBar.w3l-demo-bar a.mobile-mode{-->
+<!--      display: none;-->
+<!--    }-->
+<!--    #w3lDemoBar.w3l-demo-bar .responsive-icons {-->
+<!--      margin-top: 0px;-->
+<!--      border-top: none;-->
+<!--      padding-top: 0px;-->
+<!--    }-->
+<!--    #right-sidebar,.pull-right {-->
+<!--      width: 90px;-->
+<!--    }-->
+<!--    #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile{-->
+<!--      margin-bottom: 0;-->
+<!--    }-->
+<!--  }-->
+<!--</style>-->
+<!--<div class="products-breadcrumb">-->
+<!--  <div class="container">-->
+<!--  </div>-->
+<!--</div>-->
+<!--&lt;!&ndash; //products-breadcrumb &ndash;&gt;-->
+<!--&lt;!&ndash; banner &ndash;&gt;-->
+<!--<div class="banner">-->
+<!--  <div class="w3l_banner_nav_right">-->
+<!--    &lt;!&ndash; login &ndash;&gt;-->
+<!--    <div class="w3_login">-->
+<!--      <h3>Sign Up</h3>-->
+<!--      <div class="w3_login_module">-->
+<!--        <div class="module form-module">-->
+<!--          <div class="toggle"><i class="fa fa-times fa-pencil"></i>-->
+<!--            <div class="tooltip">Click Me</div>-->
+<!--          </div>-->
+<!--          <div class="form">-->
+<!--            <h2>Create an account</h2>-->
+<!--            &lt;!&ndash;                        <div class="w3log-social my-4 text-center">&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>&ndash;&gt;-->
+<!--            &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--            <form method="post" th:action="@{/signup}" th:object="${user}">-->
+<!--              <input type="text" name="Username" placeholder="Username" th:field="*{userName}" required=" ">-->
+<!--              <input type="text" name="Email" placeholder="Email" th:field="*{email}" required=" ">-->
+<!--              <input type="password" name="Password" placeholder="Password" th:field="*{password}"required=" ">-->
+<!--              <button type="submit">Register</button>-->
+<!--              &lt;!&ndash;              <input type="submit" value="Register">&ndash;&gt;-->
+<!--            </form>-->
+<!--          </div>-->
+<!--          <div class="cta"><a th:href="@{/signup}">Forgot your password?</a></div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--&lt;!&ndash; //banner &ndash;&gt;-->
+
+
+<!--&lt;!&ndash; Bootstrap Core JavaScript &ndash;&gt;-->
+
+<!--<script src="assets/js/jquery-3.3.1.min.js"></script>-->
+<!--<script src="assets/js/theme-change.js"></script>-->
+<!--<script>-->
+<!--  $(document).ready(function () {-->
+<!--    $(".dropdown").hover(-->
+<!--            function () {-->
+<!--              $('.dropdown-menu', this).stop(true, true).slideDown("fast");-->
+<!--              $(this).toggleClass('open');-->
+<!--            },-->
+<!--            function () {-->
+<!--              $('.dropdown-menu', this).stop(true, true).slideUp("fast");-->
+<!--              $(this).toggleClass('open');-->
+<!--            }-->
+<!--    );-->
+<!--  });-->
+<!--</script>-->
+<!--&lt;!&ndash; here stars scrolling icon &ndash;&gt;-->
+<!--<script type="text/javascript">-->
+<!--  $(document).ready(function () {-->
+<!--    /*-->
+<!--        var defaults = {-->
+<!--        containerID: 'toTop', // fading element id-->
+<!--        containerHoverID: 'toTopHover', // fading element hover id-->
+<!--        scrollSpeed: 1200,-->
+<!--        easingType: 'linear'-->
+<!--        };-->
+<!--    */-->
+
+<!--    $().UItoTop({-->
+<!--      easingType: 'easeOutQuart'-->
+<!--    });-->
+
+<!--  });-->
+<!--</script>-->
+<!--&lt;!&ndash; //here ends scrolling icon &ndash;&gt;-->
+<!--&lt;!&ndash; js &ndash;&gt;-->
+<!--<script src="assets/js/jquery-1.11.1.min.js"></script>-->
+<!--&lt;!&ndash; //js &ndash;&gt;-->
+<!--<script>-->
+<!--  $('.toggle').click(function () {-->
+<!--    // Switches the Icon-->
+<!--    $(this).children('i').toggleClass('fa-pencil');-->
+<!--    // Switches the forms-->
+<!--    $('.form').animate({-->
+<!--      height: "toggle",-->
+<!--      'padding-top': 'toggle',-->
+<!--      'padding-bottom': 'toggle',-->
+<!--      opacity: "toggle"-->
+<!--    }, "slow");-->
+<!--  });-->
+<!--</script>-->
+<!--&lt;!&ndash; script-for sticky-nav &ndash;&gt;-->
+<!--<script>-->
+<!--  $(document).ready(function () {-->
+<!--    var navoffeset = $(".agileits_header").offset().top;-->
+<!--    $(window).scroll(function () {-->
+<!--      var scrollpos = $(window).scrollTop();-->
+<!--      if (scrollpos >= navoffeset) {-->
+<!--        $(".agileits_header").addClass("fixed");-->
+<!--      } else {-->
+<!--        $(".agileits_header").removeClass("fixed");-->
+<!--      }-->
+<!--    });-->
+
+<!--  });-->
+<!--</script>-->
+<!--&lt;!&ndash; //script-for sticky-nav &ndash;&gt;-->
+<!--&lt;!&ndash; start-smoth-scrolling &ndash;&gt;-->
+<!--<script type="text/javascript" src="assets/js/move-top.js"></script>-->
+<!--<script type="text/javascript" src="assets/js/easing.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--  jQuery(document).ready(function ($) {-->
+<!--    $(".scroll").click(function (event) {-->
+<!--      event.preventDefault();-->
+<!--      $('html,body').animate({-->
+<!--        scrollTop: $(this.hash).offset().top-->
+<!--      }, 1000);-->
+<!--    });-->
+<!--  });-->
+<!--</script>-->
+<!--&lt;!&ndash; start-smoth-scrolling &ndash;&gt;-->
+<!--<script src="assets/js/minicart.js"></script>-->
+<!--<script>-->
+<!--  paypal.minicart.render();-->
+
+<!--  paypal.minicart.cart.on('checkout', function (evt) {-->
+<!--    var items = this.items(),-->
+<!--            len = items.length,-->
+<!--            total = 0,-->
+<!--            i;-->
+
+<!--    // Count the number of each item in the cart-->
+<!--    for (i = 0; i < len; i++) {-->
+<!--      total += items[i].get('quantity');-->
+<!--    }-->
+
+<!--    if (total < 3) {-->
+<!--      alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');-->
+<!--      evt.preventDefault();-->
+<!--    }-->
+<!--  });-->
+<!--</script>-->
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+<!--</body>-->
+
+<!--</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"href=""th:href="@{css/styel.css}">
+  <title> Login Page </title>
+  <style>
+    Body {
+      font-family: Calibri, Helvetica, sans-serif;
+      background-color: pink;
+    }
+    button {
+      background-color: #4CAF50;
+      width: 100%;
+      color: orange;
+      padding: 15px;
+      margin: 10px 0px;
+      border: none;
+      cursor: pointer;
+    }
+    form {
+      border: 3px solid #f1f1f1;
+    }
+    input[type=text], input[type=password] {
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px 20px;
+      display: inline-block;
+      border: 2px solid green;
+      box-sizing: border-box;
+    }
+    button:hover {
+      opacity: 0.7;
+    }
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      margin: 10px 5px;
+    }
+
+
+    .container {
+      padding: 25px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+<center> <h1> Student Login Form </h1> </center>
+<form>
+  <div class="container">
+    <form method="post" th:action="@{/signup}" th:object="${user}">
+                    <input type="text" name="Username" placeholder="Username" th:field="*{userName}" required=" ">
+                    <input type="text" name="Email" placeholder="Email" th:field="*{email}" required=" ">
+                    <input type="password" name="Password" placeholder="Password" th:field="*{password}"required=" ">
+                    <button type="submit">Register</button>
+                    <!--              <input type="submit" value="Register">-->
+                  </form>
+                </div>
+                <div class="cta"><a th:href="@{/signup}">Forgot your password?</a></div>
+              </div>
+            </div>
+  </div>
+</form>
+</body>
+</html>

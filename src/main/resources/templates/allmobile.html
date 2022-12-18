@@ -1,232 +1,8 @@
-<!--<!doctype html>-->
 
-<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
 
-<!--<-->
+<!doctype html>
 
-<!--<head>-->
-<!--  &lt;!&ndash; Required meta tags &ndash;&gt;-->
-<!--  <meta charset="utf-8">-->
-<!--  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-
-<!--  &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
-<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-<!--  <link rel="stylesheet"href=""th:href="@{/js/shoe.css}"/>-->
-
-<!--  <title>Hello, world!</title>-->
-<!--</head>-->
-
-<!--&lt;!&ndash;<form th:action="@{/admin/products/add}"method="post" th:object="${productdto}"></form>&ndash;&gt;-->
-
-<!--<div class="row">-->
-<!--  <th:block th:each = "product : ${allmobile}">-->
-<!--    <div class="col-md-3 col-sm-6">-->
-<!--      <div class="product-grid">-->
-<!--        <div class="product-image">-->
-<!--          <a href="#" class="image">-->
-<!--            &lt;!&ndash;                        <img class="pic-1" src="images/front.jpg">&ndash;&gt;-->
-<!--            <img src=""th:src="@{/image/front.jpg}"alt=""/>-->
-<!--          </a>-->
-<!--          <ul class="product-links">-->
-<!--            &lt;!&ndash;                        <a href="#"th:href="@{/admin/products}"class="card-link btn btn-danger">Manage</a>&ndash;&gt;-->
-<!--            <li><a href="#" th:href="@{/addToCart/{id}(id=${product.id})}"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>-->
-<!--            &lt;!&ndash;                        <li><a href="#"th:href="@{/shop/viewproduct/{id}}" ><i class="fa fa-search"></i> Quick View</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <a href="#"th:href="@{/shop/viewproduct/{id}(id=${product.id})}" ><i class="fa fa-search"></i> Quick View</a></li>&ndash;&gt;-->
-
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="product-content">-->
-<!--          <h3 class="title"><a href="#"> </a><p th:text="${product.name}"></p></h3>-->
-<!--          <div class="price" > <p th:text="${product.price}"></p></div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </th:block>-->
-
-<!--</div>-->
-
-<!--<!doctype html>-->
-
-<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
-
-<!--<-->
-
-<!--<head>-->
-<!--  &lt;!&ndash; Required meta tags &ndash;&gt;-->
-<!--  <meta charset="utf-8">-->
-<!--  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-
-<!--  &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
-<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-<!--  <link rel="stylesheet"href=""th:href="@{/js/mob.css}"/>-->
-
-<!--  <title>Hello, world!</title>-->
-<!--</head>-->
-<!--<section class="section-products">-->
-<!--  <div class="container">-->
-<!--    <div class="row justify-content-center text-center">-->
-<!--      <div class="col-md-8 col-lg-6">-->
-<!--        <div class="header">-->
-<!--          <h3>Featured Product</h3>-->
-<!--          <h2>Popular Products</h2>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="row">-->
-<!--      &lt;!&ndash; Single Product &ndash;&gt;-->
-<!--      <div class="col-md-6 col-lg-4 col-xl-3">-->
-<!--        <div id1="product-1" class="single-product">-->
-<!--          <div class="part-1">-->
-<!--            <ul>-->
-<!--&lt;!&ndash;              <li><a href="#" th:href="@{/addToCart/{id}(id=${product.id})}"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>&ndash;&gt;-->
-<!--              <li><a href="#"><i class="fas fa-heart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-plus"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-expand"></i></a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="part-2">-->
-<!--            <h3 class="product-title">Here Product Title</h3>-->
-<!--            <h4 class="product-old-price">$79.99</h4>-->
-<!--            <h4 class="product-price">$49.99</h4>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Single Product &ndash;&gt;-->
-<!--      <div class="col-md-6 col-lg-4 col-xl-3">-->
-<!--        <div id2="product-2" class="single-product">-->
-<!--          <div class="part-1">-->
-<!--            <span class="discount">15% off</span>-->
-<!--            <ul>-->
-<!--              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-heart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-plus"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-expand"></i></a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="part-2">-->
-<!--            <h3 class="product-title">Here Product Title</h3>-->
-<!--            <h4 class="product-price">$49.99</h4>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Single Product &ndash;&gt;-->
-<!--      <div class="col-md-6 col-lg-4 col-xl-3">-->
-<!--        <div id3="product-3" class="single-product">-->
-<!--          <div class="part-1">-->
-<!--            <ul>-->
-<!--              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-heart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-plus"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-expand"></i></a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="part-2">-->
-<!--            <h3 class="product-title">Here Product Title</h3>-->
-<!--            <h4 class="product-old-price">$79.99</h4>-->
-<!--            <h4 class="product-price">$49.99</h4>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Single Product &ndash;&gt;-->
-<!--      <div class="col-md-6 col-lg-4 col-xl-3">-->
-<!--        <div id4="product-4" class="single-product">-->
-<!--          <div class="part-1">-->
-<!--            <span class="new">new</span>-->
-<!--            <ul>-->
-<!--              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-heart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-plus"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-expand"></i></a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="part-2">-->
-<!--            <h3 class="product-title">Here Product Title</h3>-->
-<!--            <h4 class="product-price">$49.99</h4>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Single Product &ndash;&gt;-->
-<!--      <div class="col-md-6 col-lg-4 col-xl-3">-->
-<!--        <div id="product-1" class="single-product">-->
-<!--          <div class="part-1">-->
-<!--            <ul>-->
-<!--              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-heart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-plus"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-expand"></i></a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="part-2">-->
-<!--            <h3 class="product-title">Here Product Title</h3>-->
-<!--            <h4 class="product-old-price">$79.99</h4>-->
-<!--            <h4 class="product-price">$49.99</h4>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Single Product &ndash;&gt;-->
-<!--      <div class="col-md-6 col-lg-4 col-xl-3">-->
-<!--        <div id="product-2" class="single-product">-->
-<!--          <div class="part-1">-->
-<!--            <span class="discount">15% off</span>-->
-<!--            <ul>-->
-<!--              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-heart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-plus"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-expand"></i></a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="part-2">-->
-<!--            <h3 class="product-title">Here Product Title</h3>-->
-<!--            <h4 class="product-price">$49.99</h4>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Single Product &ndash;&gt;-->
-<!--      <div class="col-md-6 col-lg-4 col-xl-3">-->
-<!--        <div id="product-3" class="single-product">-->
-<!--          <div class="part-1">-->
-<!--            <ul>-->
-<!--              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-heart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-plus"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-expand"></i></a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="part-2">-->
-<!--            <h3 class="product-title">Here Product Title</h3>-->
-<!--            <h4 class="product-old-price">$79.99</h4>-->
-<!--            <h4 class="product-price">$49.99</h4>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; Single Product &ndash;&gt;-->
-<!--      <div class="col-md-6 col-lg-4 col-xl-3">-->
-<!--        <div id="product-4" class="single-product">-->
-<!--          <div class="part-1">-->
-<!--            <span class="new">new</span>-->
-<!--            <ul>-->
-<!--              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-heart"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-plus"></i></a></li>-->
-<!--              <li><a href="#"><i class="fas fa-expand"></i></a></li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="part-2">-->
-<!--            <h3 class="product-title">Here Product Title</h3>-->
-<!--            <h4 class="product-price">$49.99</h4>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--<!doctype html>-->
-
-<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
-
-<!--<-->
-
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -239,46 +15,7 @@
   <title>Hello, world!</title>
 </head>
 
-<!--<div class="row">-->
-<!--  <div class="col-md-3 col-sm-6">-->
-<!--    <div class="product-grid">-->
-<!--      <div class="product-image">-->
-<!--        <a href="#" class="image">-->
 
-<!--              &lt;!&ndash;                        <img class="pic-1" src="images/front.jpg">&ndash;&gt;-->
-<!--              <img src=""th:src="@{/image/front.jpg}"alt=""/>-->
-<!--            </a>-->
-<!--        </a>-->
-<!--        <ul class="product-links">-->
-<!--&lt;!&ndash;          <li><a href="#" th:href="@{/cart}"i class="fa fa-shopping-bag"></i> Add to cart</a></li>&ndash;&gt;-->
-<!--          <li><a href="#"th:href="@{/addToCart/{id}(id=${product.id})}">><i class="fa fa-shopping-bag"></i> Add to cart</a></li>-->
-<!--          <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      <div class="product-content">-->
-<!--        <h3 class="title"><a href="#">Women's Cotton Top</a></h3>-->
-<!--        <div class="price">$79.99</div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div class="col-md-3 col-sm-6">-->
-<!--    <div class="product-grid">-->
-<!--      <div class="product-image">-->
-<!--        <a href="#" class="image">-->
-<!--          <img src=""th:src="@{/image/front.jpg}"alt=""/>-->
-<!--        </a>-->
-<!--        <span class="product-sale-label">Sale!</span>-->
-<!--        <ul class="product-links">-->
-<!--          <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>-->
-<!--          <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      <div class="product-content">-->
-<!--        <h3 class="title"><a href="#">Women's T-Shirt</a></h3>-->
-<!--        <div class="price"><span>$85.55</span> $71.11</div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
     <th:block th:each = "product : ${products}">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
@@ -291,17 +28,20 @@
                         <!--                        <a href="#"th:href="@{/admin/products}"class="card-link btn btn-danger">Manage</a>-->
                         <li><a href="#" th:href="@{/addToCart/{id}(id=${product.id})}"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
                         <!--                        <li><a href="#"th:href="@{/shop/viewproduct/{id}}" ><i class="fa fa-search"></i> Quick View</a></li>-->
-                        <a href="#"th:href="@{/shop/viewproduct/{id}(id=${product.id})}" ><i class="fa fa-search"></i> Quick View</a></li>
+<!--                        <a href="#"th:href="@{/shop/viewproduct/{id}(id=${product.id})}" ><i class="fa fa-search"></i> Quick View</a></li>-->
 
                     </ul>
                 </div>
                 <div class="product-content">
                     <h3 class="title"><a href="#"> </a><p th:text="${product.name}"></p></h3>
-                    <div class="price" > <p th:text="${product.price}"></p></div>
+                    <div class="price" > <p th:text="${product.price}">BDT</p></div>
+                    <div class="price" > <p th:text="${product.description}"></p></div>
                 </div>
             </div>
         </div>
     </th:block>
 
 </div>
-</div>
+
+</body>
+</html>

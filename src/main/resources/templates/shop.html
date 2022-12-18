@@ -83,6 +83,7 @@
     <div class="col-sm-3">
       <h4>Categories</h4>
       <ul class="list-group">
+<!--          <li><a href="#" th:href="@{/addToCart/{id}(id=${product.id})}"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>-->
         <a th:href="@{/allproduct}"><li class="list-group-item">Laptops</li> </a>
         <a href=""th:each="category,iStat:${categories}"
            th:href="@{/shop/category/{id}(id=${category.id})}">
@@ -101,6 +102,17 @@
                       <!--      <li class="list-group-item"th:text="${category.name}"></li></a>-->
               </ul>
           </div>
+          <div class="container"style="">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <h4>Categories</h4>
+                      <ul class="list-group">
+                          <a th:href="@{/allearphone2}"><li class="list-group-item">Earphone</li> </a>
+                          <a href=""th:each="category,iStat:${categories}"
+                             th:href="@{/shop/category/{id}(id=${category.id})}">
+                              <!--      <li class="list-group-item"th:text="${category.name}"></li></a>-->
+                      </ul>
+                  </div>
 
  </div>
   <div class="col-sm-9">

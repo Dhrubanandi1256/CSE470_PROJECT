@@ -1,12 +1,11 @@
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-                                                                                                                              <style type="text/css">
-                                                                                                                                                    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         body
-   <link rel="stylesheet" href="" th:href="@{/js/pay.css}">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       {
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+                                                                                                                        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+                                                                                                                                                                                                                                                      <style type="text/css">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          body
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               background:#f2f2f2;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           }
-body{
-    background: #00b894c;
-}
+
 .payment
 {
     border:1px solid #f2f2f2;
@@ -28,7 +27,7 @@ body{
     width:50px;
     height:50px;
     border-radius:100%;
-    background:#fff;
+    background:tomato;
     text-align:center;
 }
 

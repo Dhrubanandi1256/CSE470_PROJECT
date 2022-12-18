@@ -45,7 +45,8 @@ public class login {
     public String postLogin(Model model, User user){
         System.out.println("here?");
         if (userService.loginValidate(user)){
-            return "redirect:/index";
+//            return "redirect:/index";
+            return "redirect:/shop";
         }
         model.addAttribute("user",new User());
         return "redirect:/login";

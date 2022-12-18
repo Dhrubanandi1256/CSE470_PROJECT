@@ -38,8 +38,14 @@ public class CartController {
     }
     @GetMapping("/checkout1")
     public String checkoutItem(Model model){
-        model.addAttribute("total", GlobalData.cart.stream().mapToDouble(Product::getPrice).sum());
+//       model.addAttribute("total", GlobalData.cart.stream().mapToDouble(Product::getPrice).sum());
+        model.addAttribute("total",GlobalData.cart.stream().mapToDouble(Product::getPrice).sum());
         return "checkout";
+    }
+    @GetMapping("/payment1")
+    public String payment(Model model){
+        //model.addAttribute("total", GlobalData.cart.stream().mapToDouble(Product::getPrice).sum());
+        return "Payment";
     }
 
 

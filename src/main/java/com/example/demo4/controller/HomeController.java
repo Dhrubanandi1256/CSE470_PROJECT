@@ -56,5 +56,10 @@ public class HomeController {
         model.addAttribute("products", productService.getAllProduct());
         return "allmobile";
     }
+    @GetMapping({"/allearphone2"})
+    public String allear(Model model) {
+        model.addAttribute("products", productService.getAllProduct());
+        return "allearphone";
+    }
 
 }

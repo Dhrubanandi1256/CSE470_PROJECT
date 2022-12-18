@@ -10,10 +10,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-
 public class ProductService {
-    @Autowired
-    productrepo productrepo;
+    private final productrepo productrepo;
+
+    public ProductService(productrepo productrepo) {
+        this.productrepo = productrepo;
+    }
 
     public List<Product> getAllProduct()
     {
